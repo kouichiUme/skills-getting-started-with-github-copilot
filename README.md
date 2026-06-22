@@ -12,5 +12,25 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 ---
 
+## Backend tests
+
+This project includes backend API tests under `tests/` for:
+
+- `GET /activities`
+- `POST /activities/{activity_name}/signup`
+- `DELETE /activities/{activity_name}/participants`
+
+Run tests:
+
+```bash
+pytest tests/ -v
+```
+
+Run with coverage:
+
+```bash
+pytest tests/ --cov=src --cov-report=term-missing
+```
+
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
