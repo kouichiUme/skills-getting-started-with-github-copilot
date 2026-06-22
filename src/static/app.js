@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       messageDiv.classList.remove("hidden");
       console.error("Error unregistering participant:", error);
     } finally {
+      removeButton.disabled = false;
       setTimeout(() => {
         messageDiv.classList.add("hidden");
       }, 5000);
